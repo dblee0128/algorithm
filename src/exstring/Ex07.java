@@ -7,25 +7,18 @@ public class Ex07 {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		String str = sc.nextLine().toUpperCase();
+		String str1 = sc.next();
+		String str2 = sc.next();
 		
-		int[] cnt = new int[26];
-		int max = 0;
-		char result = '?';
+		String str3 = new StringBuffer().append(str1).reverse().toString();
+		String str4 = new StringBuffer().append(str2).reverse().toString();
+
 		
-		for(int i = 0; i < str.length(); i++) {
-			cnt[str.charAt(i) - 65]++; 
-			
-			if(max < cnt[str.charAt(i) - 65]) { 
-				max = cnt[str.charAt(i) - 65]; 
-				result = str.charAt(i); 
-			} else if(max == cnt[str.charAt(i) - 65]) {
-				result = '?';
-			}
-		}
+		int num1 = Integer.parseInt(str3);
+		int num2 = Integer.parseInt(str4);
 		
-		System.out.println(result);
+		System.out.println(num1 > num2 ? num1 : num2);
 
 	}
-	
+
 }
