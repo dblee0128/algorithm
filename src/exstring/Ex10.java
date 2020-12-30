@@ -18,7 +18,7 @@ public class Ex10 {
 		}
 		
 		System.out.println(count);
-		
+
 	}
 	
 	// 그룹 단어를 체크할 함수
