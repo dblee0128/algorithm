@@ -23,6 +23,7 @@ public class Ex2 {
 	}	
 	
 	// 매개변수 n + 각 자리수의 합
+	// 셀프 넘버를 구하는 공식
 	public static int d(int n) { 	// 1 ~ 9999까지의 숫자가 들어옴 
 		
 		int w = n / 1000; 			// 천의 자리
